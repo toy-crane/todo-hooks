@@ -6,3 +6,6 @@ export { default as Checkbox } from "./atoms/checkbox";
 
 // molecules
 export { default as Header } from "./molecules/Header";
+export { default as TodoInput } from "./molecules/TodoInput";
+
+// organisms
