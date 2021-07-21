@@ -5,16 +5,16 @@ interface Props {
 	checked?: boolean;
 }
 
-const Checkbox = ({ onChange, checked: checkedProps = false }: Props) => {
-	const [checked, setChecked] = useState<boolean>(checkedProps);
+const Checkbox = ({ onChange, checked = false }: Props) => {
+	const [state, setState] = useState<boolean>(checked);
 	const handleChecked = useCallback(
 		(e: React.ChangeEvent<HTMLInputElement>) => {
 			onChange?.(e.target?.checked);
-			setChecked(!checked);
+			setState((state) => !state);
 		},
-		[checked, onChange]
+		[onChange]
 	);
-	return <input type="checkbox" onChange={handleChecked} checked={checked} />;
+	return <input type="checkbox" onChange={handleChecked} checked={state} />;
 };
 
 export default Checkbox;
