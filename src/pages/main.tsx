@@ -1,4 +1,4 @@
-import { ContentContainer, Header, Input } from "../components";
+import { ContentContainer, Header } from "../components";
 
 const MainPage = () => {
 	return (
