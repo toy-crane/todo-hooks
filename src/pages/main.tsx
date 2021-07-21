@@ -1,4 +1,6 @@
+import { ContentContainer } from "../components";
+
 const MainPage = () => {
-	return <div>Main</div>;
+	return <ContentContainer>Main</ContentContainer>;
 };
 export default MainPage;
