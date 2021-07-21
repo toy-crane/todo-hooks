@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -10,4 +11,4 @@ const Header = () => (
 		<h1>Todo List</h1>
 	</Wrapper>
 );
-export default Header;
+export default memo(Header);
