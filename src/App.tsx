@@ -1,5 +1,12 @@
+import { RecoilRoot } from "recoil";
+import MainPage from "./pages/main";
+
 function App() {
-	return <div>Todos</div>;
+	return (
+		<RecoilRoot>
+			<MainPage />
+		</RecoilRoot>
+	);
 }
 
 export default App;
