@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-	display: flex;
 	width: 1024px;
 	margin: 0 auto;
 `;

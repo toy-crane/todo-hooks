@@ -1,6 +1,10 @@
-import { ContentContainer } from "../components";
+import { ContentContainer, Header } from "../components";
 
 const MainPage = () => {
-	return <ContentContainer>Main</ContentContainer>;
+	return (
+		<ContentContainer>
+			<Header />
+		</ContentContainer>
+	);
 };
 export default MainPage;
