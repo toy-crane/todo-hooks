@@ -2,9 +2,10 @@ import { useCallback } from "react";
 
 interface Props {
 	onKeyDown?: (value: string) => void;
+	placeholder?: string;
 }
 
-const Input = ({ onKeyDown }: Props) => {
+const Input = ({ onKeyDown, placeholder }: Props) => {
 	const handleKeyDown = useCallback(
 		(e: React.KeyboardEvent<HTMLInputElement>) => {
 			if (e.code !== "Enter") {
@@ -20,7 +21,13 @@ const Input = ({ onKeyDown }: Props) => {
 		[onKeyDown]
 	);
 
-	return <input type="text" onKeyDown={handleKeyDown}></input>;
+	return (
+		<input
+			type="text"
+			onKeyDown={handleKeyDown}
+			placeholder={placeholder}
+		></input>
+	);
 };
 
 export default Input;
